@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'plugin:import/recommended', 'plugin:import/typescript', 'prettier'],
-  plugins: ['unused-imports'],
+  extends: ['next/core-web-vitals', 'plugin:import/recommended', 'plugin:import/typescript', 'plugin:tailwindcss/recommended', 'prettier'],
+  plugins: ['unused-imports', 'tailwindcss'],
   rules: {
     'react/jsx-curly-brace-presence': 2,
     'import/no-unresolved': 'off',
