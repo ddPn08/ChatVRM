@@ -6,15 +6,7 @@ module.exports = {
     'tailwindcss/no-custom-classname': 'off',
     'import/no-unresolved': 'off',
     'unused-imports/no-unused-imports': 'error',
-    'unused-imports/no-unused-vars': [
-      'warn',
-      {
-        vars: 'all',
-        varsIgnorePattern: '^_',
-        args: 'all',
-        argsIgnorePattern: '^_',
-      },
-    ],
+    'unused-imports/no-unused-vars': 'off',
     'import/order': [
       'error',
       {
