@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['unused-imports', 'tailwindcss'],
   rules: {
     'react/jsx-curly-brace-presence': 2,
+    'tailwindcss/no-custom-classname': 'off',
     'import/no-unresolved': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [

@@ -1,13 +1,13 @@
-import { ButtonHTMLAttributes } from "react";
-type Props = ButtonHTMLAttributes<HTMLButtonElement>;
+import { ButtonHTMLAttributes } from 'react'
+type Props = ButtonHTMLAttributes<HTMLButtonElement>
 
 export const TextButton = (props: Props) => {
   return (
     <button
       {...props}
-      className={`px-24 py-8 text-white font-bold bg-primary hover:bg-primary-hover active:bg-primary-press-press disabled:bg-primary-disabled rounded-oval  ${props.className}`}
+      className={`active:bg-primary-press-press rounded-oval bg-primary px-24 py-8 font-bold text-white hover:bg-primary-hover disabled:bg-primary-disabled  ${props.className}`}
     >
       {props.children}
     </button>
-  );
-};
+  )
+}

@@ -1,13 +1,8 @@
-import { TalkStyle } from "../messages/messages";
+import { TalkStyle } from '../messages/messages'
 
-export async function synthesizeVoice(
-  message: string,
-  speaker_x: number,
-  speaker_y: number,
-  style: TalkStyle
-) {
+export async function synthesizeVoice(message: string, speaker_x: number, speaker_y: number, style: TalkStyle) {
   const param = {
-    method: "POST",
+    method: 'POST',
     body: JSON.stringify({
       text: message,
       speaker_x: speaker_x,
@@ -15,16 +10,13 @@ export async function synthesizeVoice(
       style: style,
     }),
     headers: {
-      "Content-type": "application/json; charset=UTF-8",
+      'Content-type': 'application/json; charset=UTF-8',
     },
-  };
+  }
 
-  const koeiroRes = await fetch(
-    "https://api.rinna.co.jp/models/cttse/koeiro",
-    param
-  );
+  const koeiroRes = await fetch('https://api.rinna.co.jp/models/cttse/koeiro', param)
 
-  const data = (await koeiroRes.json()) as any;
+  const data = (await koeiroRes.json()) as any
 
-  return { audio: data.audio };
+  return { audio: data.audio }
 }
