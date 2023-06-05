@@ -6,6 +6,7 @@ import { KoeiroParam } from '../constants/koeiroParam'
 export type Message = {
   role: 'assistant' | 'system' | 'user'
   content: string
+  image?: string
 }
 
 const talkStyles = ['talk', 'happy', 'sad', 'angry', 'fear', 'surprised'] as const
@@ -16,6 +17,7 @@ export type Talk = {
   speakerX: number
   speakerY: number
   message: string
+  image?: string
 }
 
 const emotions = ['neutral', 'happy', 'angry', 'sad', 'relaxed'] as const
@@ -40,11 +42,11 @@ export const textsToScreenplay = (texts: string[], koeiroParam: KoeiroParam): Sc
   for (let i = 0; i < texts.length; i++) {
     const text = texts[i]
 
-    const match = text.match(/\[(.*?)\]/)
+    const tagMatches = text.match(/\[(.*?)\]/)
 
-    const tag = (match && match[1]) || prevExpression
+    const tag = (tagMatches && tagMatches[1]) || prevExpression
 
-    const message = text.replace(/\[(.*?)\]/g, '')
+    const message = text.replace(/\[(.*?)\]/g, '').replace(/{image:"([^"]+)"}/g, '')
 
     let expression = prevExpression
     if (emotions.includes(tag as any)) {

@@ -1,5 +1,3 @@
-import { GitHubLink } from '@/components/githubLink'
-import { Introduction } from '@/components/introduction'
 import { Menu } from '@/components/menu'
 import { MessageInputContainer } from '@/components/messageInputContainer'
 import { Meta } from '@/components/meta'
@@ -7,6 +5,7 @@ import VrmViewer from '@/components/vrmViewer'
 import { getChatResponseStream } from '@/features/chat/openAiChat'
 import { KoeiroParam, DEFAULT_PARAM } from '@/features/constants/koeiroParam'
 import { SYSTEM_PROMPT } from '@/features/constants/systemPromptConstants'
+import { generateImage } from '@/features/image/openAiImage'
 import { Message, textsToScreenplay, Screenplay } from '@/features/messages/messages'
 import { speakCharacter } from '@/features/messages/speakCharacter'
 import { ViewerContext } from '@/features/vrmViewer/viewerContext'
@@ -29,11 +28,11 @@ export default function Home() {
   const { viewer } = useContext(ViewerContext)
 
   const [systemPrompt, setSystemPrompt] = useState(SYSTEM_PROMPT)
-  const [openAiKey, setOpenAiKey] = useState('')
+  const [openAiKey, setOpenAiKey] = useState(process.env.NEXT_PUBLIC_OPENAI_KEY)
   const [koeiroParam, setKoeiroParam] = useState<KoeiroParam>(DEFAULT_PARAM)
   const [chatProcessing, setChatProcessing] = useState(false)
   const [chatLog, setChatLog] = useState<Message[]>([])
-  const [assistantMessage, setAssistantMessage] = useState('')
+  const [assistantMessage, setAssistantMessage] = useState<Message>()
 
   const handleChangeChatLog = useCallback(
     (targetIndex: number, text: string) => {
@@ -62,7 +61,10 @@ export default function Home() {
   const handleSendChat = useCallback(
     async (text: string) => {
       if (!openAiKey) {
-        setAssistantMessage('APIキーが入力されていません')
+        setAssistantMessage({
+          role: 'system',
+          content: 'OpenAIのAPIキーが設定されていません',
+        })
         return
       }
 
@@ -84,7 +86,13 @@ export default function Home() {
         ...messageLog,
       ]
 
-      const stream = await getChatResponseStream(messages, openAiKey).catch((e) => {
+      // messagesから`image`項目を消しておく
+      const messagesWithoutImage = messages.map((v) => {
+        const { image, ...rest } = v
+        return rest
+      })
+
+      const stream = await getChatResponseStream(messagesWithoutImage, openAiKey).catch((e) => {
         console.error(e)
         return null
       })
@@ -96,6 +104,7 @@ export default function Home() {
       const reader = stream.getReader()
       let receivedMessage = ''
       let aiTextLog = ''
+      let aiImage = ''
       let tag = ''
       const sentences = new Array<string>()
       try {
@@ -115,8 +124,12 @@ export default function Home() {
           // 返答を一文単位で切り出して処理する
           const sentenceMatch = receivedMessage.match(/^(.+[。．！？\n]|.{10,}[、,])/)
           if (sentenceMatch && sentenceMatch[0]) {
-            const sentence = sentenceMatch[0]
+            let sentence = sentenceMatch[0]
+
+            const imageMatches = sentence.match(/{image:"([^"]+)"}/)
+            sentence = sentence.replace(/{image:"([^"]+)"}/, '')
             sentences.push(sentence)
+
             receivedMessage = receivedMessage.slice(sentence.length).trimStart()
 
             // 発話不要/不可能な文字列だった場合はスキップ
@@ -124,14 +137,22 @@ export default function Home() {
               continue
             }
 
+            if (imageMatches && imageMatches[1]) {
+              aiImage = (await generateImage(imageMatches[1], openAiKey)) ?? ''
+            }
             const aiText = `${tag} ${sentence}`
+
             const aiTalks = textsToScreenplay([aiText], koeiroParam)
             aiTextLog += aiText
 
             // 文ごとに音声を生成 & 再生、返答を表示
             const currentAssistantMessage = sentences.join(' ')
             handleSpeakAi(aiTalks[0], () => {
-              setAssistantMessage(currentAssistantMessage)
+              setAssistantMessage({
+                role: 'assistant',
+                content: currentAssistantMessage,
+                image: aiImage,
+              })
             })
           }
         }
@@ -143,7 +164,7 @@ export default function Home() {
       }
 
       // アシスタントの返答をログに追加
-      const messageLogAssistant: Message[] = [...messageLog, { role: 'assistant', content: aiTextLog }]
+      const messageLogAssistant: Message[] = [...messageLog, { role: 'assistant', content: aiTextLog, image: aiImage }]
 
       setChatLog(messageLogAssistant)
       setChatProcessing(false)
@@ -154,7 +175,7 @@ export default function Home() {
   return (
     <div className={`${m_plus_2.variable} ${montserrat.variable}`}>
       <Meta />
-      <Introduction openAiKey={openAiKey} onChangeAiKey={setOpenAiKey} />
+      {/* <Introduction openAiKey={openAiKey} onChangeAiKey={setOpenAiKey} /> */}
       <VrmViewer />
       <MessageInputContainer isChatProcessing={chatProcessing} onChatProcessStart={handleSendChat} />
       <Menu
@@ -168,7 +189,6 @@ export default function Home() {
         onChangeChatLog={handleChangeChatLog}
         onChangeKoeiromapParam={setKoeiroParam}
       />
-      <GitHubLink />
     </div>
   )
 }

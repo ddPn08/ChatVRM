@@ -13,7 +13,7 @@ type Props = {
   systemPrompt: string
   chatLog: Message[]
   koeiroParam: KoeiroParam
-  assistantMessage: string
+  assistantMessage?: Message
   onChangeSystemPrompt: (systemPrompt: string) => void
   onChangeAiKey: (key: string) => void
   onChangeChatLog: (index: number, text: string) => void
