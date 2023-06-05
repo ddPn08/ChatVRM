@@ -7,169 +7,169 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		299814393FFBF154FAD94CA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3673D372C5ABDD1AD6E7067 /* QuartzCore.framework */; };
-		31585529C029A01BE249A285 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E81BD6B453D87B7F7B1597B /* CoreGraphics.framework */; };
-		324A1E9A4258E7911D4DAC39 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FACFFCB6E3743955F72464C /* Security.framework */; };
-		424072719406B85212A9D491 /* libapp_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00D3351B31EC5CF36BD26BB /* libapp_lib.a */; };
-		53CDD0ACFBE8BDF1550B2E53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682535EEFE1DA20BE07B123C /* main.mm */; };
-		5C516481BCA83A182C2BCC94 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 3842AE2A64FB9933D0400EA4 /* assets */; };
-		618672DC8A5E0605441C9935 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B15F176E4B041AE33EEEA /* UIKit.framework */; };
-		836D84C5F07860664DAF79C8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F57162F5CC7AEDD55F173D /* WebKit.framework */; };
-		9D59FB167BB4E699DA17D1E9 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B56F58E2E44DDE1D67E7B7 /* MetalKit.framework */; };
-		C6BD59C055C986EA4A77FDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF1DE57E7D9CF13BB2E0E038 /* Assets.xcassets */; };
-		E68F6CFDAED6503ABB4044A5 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1209BFDECB28E00189B168 /* Metal.framework */; };
+		1387938EBB0CFEE2E5DB47B2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4565D08382C289B719D01D45 /* WebKit.framework */; };
+		19D0758500C7E8A13F9F90EC /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EDDE7BF21F65C474EAA6150 /* main.mm */; };
+		214FB8AFED568AAAA384866D /* libapp_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D29BAC9C35B3A044DCCB494 /* libapp_lib.a */; };
+		504F544124EEDDCEB1BAABB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CD6C9C3B793CCF49C09525 /* UIKit.framework */; };
+		624D7E123CF4AC3D7B922603 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65CCDD9AD186912677C510E /* QuartzCore.framework */; };
+		6FDEF1AADE45ABF8D883827F /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 83C2DE7DC14981112EFDF223 /* assets */; };
+		733E5029811EB58A42E38E5A /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34194A5B85CC8DB44AC0A585 /* MetalKit.framework */; };
+		85CF010412CD182D18D3DB20 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CECE5F8E985F71737468DA /* Metal.framework */; };
+		91AC5ECF1DB3F3F9082279E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EB4EAFC30A7AC4498EE76B /* Assets.xcassets */; };
+		B3A6465ACD0D5AE26CC6CCF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24223CDCA8DE2B765DDD0040 /* CoreGraphics.framework */; };
+		F3C121487FB8F72DD25CE9E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F940475FA3DA06C5CE28EC7 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04B56F58E2E44DDE1D67E7B7 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		0E2B15F176E4B041AE33EEEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1631E4CFBB715FFDBF919C8C /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
-		17B52554D60D361AFE791C3E /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
-		1E81BD6B453D87B7F7B1597B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		306B9C1792E7B1C53FA262A6 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
-		3842AE2A64FB9933D0400EA4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
-		682535EEFE1DA20BE07B123C /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		9FACFFCB6E3743955F72464C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		AF1DE57E7D9CF13BB2E0E038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE1209BFDECB28E00189B168 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		D8F57162F5CC7AEDD55F173D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		E00D3351B31EC5CF36BD26BB /* libapp_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp_lib.a; sourceTree = "<group>"; };
-		F3673D372C5ABDD1AD6E7067 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FBC720DFA1D01F55B0A32344 /* app_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = app_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F940475FA3DA06C5CE28EC7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1EDDE7BF21F65C474EAA6150 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		24223CDCA8DE2B765DDD0040 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		25D57090392E19C84EA169B6 /* chat-vrm_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "chat-vrm_iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EB4EAFC30A7AC4498EE76B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34194A5B85CC8DB44AC0A585 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4565D08382C289B719D01D45 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5D297DBD313ADB9DFB69B874 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		6904043E5AFCABCA52890004 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		6D29BAC9C35B3A044DCCB494 /* libapp_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp_lib.a; sourceTree = "<group>"; };
+		7A90FE4E5672CDC04577CDC3 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		83C2DE7DC14981112EFDF223 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		88CD6C9C3B793CCF49C09525 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D65CCDD9AD186912677C510E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3CECE5F8E985F71737468DA /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4825CF6C55516D374210C8E1 /* Frameworks */ = {
+		7A712B97779EE7F0C8141060 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424072719406B85212A9D491 /* libapp_lib.a in Frameworks */,
-				31585529C029A01BE249A285 /* CoreGraphics.framework in Frameworks */,
-				E68F6CFDAED6503ABB4044A5 /* Metal.framework in Frameworks */,
-				9D59FB167BB4E699DA17D1E9 /* MetalKit.framework in Frameworks */,
-				299814393FFBF154FAD94CA8 /* QuartzCore.framework in Frameworks */,
-				324A1E9A4258E7911D4DAC39 /* Security.framework in Frameworks */,
-				618672DC8A5E0605441C9935 /* UIKit.framework in Frameworks */,
-				836D84C5F07860664DAF79C8 /* WebKit.framework in Frameworks */,
+				214FB8AFED568AAAA384866D /* libapp_lib.a in Frameworks */,
+				B3A6465ACD0D5AE26CC6CCF9 /* CoreGraphics.framework in Frameworks */,
+				85CF010412CD182D18D3DB20 /* Metal.framework in Frameworks */,
+				733E5029811EB58A42E38E5A /* MetalKit.framework in Frameworks */,
+				624D7E123CF4AC3D7B922603 /* QuartzCore.framework in Frameworks */,
+				F3C121487FB8F72DD25CE9E9 /* Security.framework in Frameworks */,
+				504F544124EEDDCEB1BAABB3 /* UIKit.framework in Frameworks */,
+				1387938EBB0CFEE2E5DB47B2 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BBF8C620E54F8C028CA130C /* Frameworks */ = {
+		13DC1FA77A978AE0F3F14E49 /* chat-vrm */ = {
 			isa = PBXGroup;
 			children = (
-				1E81BD6B453D87B7F7B1597B /* CoreGraphics.framework */,
-				E00D3351B31EC5CF36BD26BB /* libapp_lib.a */,
-				CE1209BFDECB28E00189B168 /* Metal.framework */,
-				04B56F58E2E44DDE1D67E7B7 /* MetalKit.framework */,
-				F3673D372C5ABDD1AD6E7067 /* QuartzCore.framework */,
-				9FACFFCB6E3743955F72464C /* Security.framework */,
-				0E2B15F176E4B041AE33EEEA /* UIKit.framework */,
-				D8F57162F5CC7AEDD55F173D /* WebKit.framework */,
+				1EDDE7BF21F65C474EAA6150 /* main.mm */,
+				CC0170EB77BD5F70A9761359 /* bindings */,
 			);
-			name = Frameworks;
+			path = "chat-vrm";
 			sourceTree = "<group>";
 		};
-		329C38BE5E8B40354375D0D0 /* bindings */ = {
+		1FB92E4B789477663B0D3756 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				306B9C1792E7B1C53FA262A6 /* bindings.h */,
-			);
-			path = bindings;
-			sourceTree = "<group>";
-		};
-		78CBE3E5873199C0066F12DF /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				FB1C68C0357A1866B3D27465 /* app */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		855775165ACE55D883F89EB3 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				17B52554D60D361AFE791C3E /* lib.rs */,
-				1631E4CFBB715FFDBF919C8C /* main.rs */,
+				6904043E5AFCABCA52890004 /* lib.rs */,
+				5D297DBD313ADB9DFB69B874 /* main.rs */,
 			);
 			name = src;
 			path = ../../src;
 			sourceTree = "<group>";
 		};
-		87648061424F20D5D4871E9E = {
+		679EF75C91BD362ABDA2A458 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3842AE2A64FB9933D0400EA4 /* assets */,
-				AF1DE57E7D9CF13BB2E0E038 /* Assets.xcassets */,
-				BAFB695BB8415511FEC74542 /* Externals */,
-				78CBE3E5873199C0066F12DF /* Sources */,
-				855775165ACE55D883F89EB3 /* src */,
-				1BBF8C620E54F8C028CA130C /* Frameworks */,
-				EE72B6AC647386A11F795E44 /* Products */,
+				24223CDCA8DE2B765DDD0040 /* CoreGraphics.framework */,
+				6D29BAC9C35B3A044DCCB494 /* libapp_lib.a */,
+				F3CECE5F8E985F71737468DA /* Metal.framework */,
+				34194A5B85CC8DB44AC0A585 /* MetalKit.framework */,
+				D65CCDD9AD186912677C510E /* QuartzCore.framework */,
+				0F940475FA3DA06C5CE28EC7 /* Security.framework */,
+				88CD6C9C3B793CCF49C09525 /* UIKit.framework */,
+				4565D08382C289B719D01D45 /* WebKit.framework */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BAFB695BB8415511FEC74542 /* Externals */ = {
+		80A3699CC14BE56DFAF5963E /* Externals */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Externals;
 			sourceTree = "<group>";
 		};
-		EE72B6AC647386A11F795E44 /* Products */ = {
+		B92814179B96158487DB9B14 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FBC720DFA1D01F55B0A32344 /* app_iOS.app */,
+				13DC1FA77A978AE0F3F14E49 /* chat-vrm */,
 			);
-			name = Products;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		FB1C68C0357A1866B3D27465 /* app */ = {
+		CC0170EB77BD5F70A9761359 /* bindings */ = {
 			isa = PBXGroup;
 			children = (
-				682535EEFE1DA20BE07B123C /* main.mm */,
-				329C38BE5E8B40354375D0D0 /* bindings */,
+				7A90FE4E5672CDC04577CDC3 /* bindings.h */,
 			);
-			path = app;
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		DE6D58AE13F8CBB3299A12CD = {
+			isa = PBXGroup;
+			children = (
+				83C2DE7DC14981112EFDF223 /* assets */,
+				28EB4EAFC30A7AC4498EE76B /* Assets.xcassets */,
+				80A3699CC14BE56DFAF5963E /* Externals */,
+				B92814179B96158487DB9B14 /* Sources */,
+				1FB92E4B789477663B0D3756 /* src */,
+				679EF75C91BD362ABDA2A458 /* Frameworks */,
+				F533253BB057E78BA7FC9E5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F533253BB057E78BA7FC9E5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25D57090392E19C84EA169B6 /* chat-vrm_iOS.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E86255CB8A1836C0BF0C0E14 /* app_iOS */ = {
+		063F69791D04D657B1A5D389 /* chat-vrm_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDCB6DFA1AEBFEE3F608BA27 /* Build configuration list for PBXNativeTarget "app_iOS" */;
+			buildConfigurationList = 0C3FFACA68340778E2C909A8 /* Build configuration list for PBXNativeTarget "chat-vrm_iOS" */;
 			buildPhases = (
-				E028F843270D8815FCE2B491 /* Build Rust Code */,
-				81BE6BC5B603407AF570E994 /* Sources */,
-				2FBCB8C3ED193E9C4A9FDB59 /* Resources */,
-				4825CF6C55516D374210C8E1 /* Frameworks */,
+				811F10AD500FCDDC0947928D /* Build Rust Code */,
+				E0007C9E364E22E8A77C7ADA /* Sources */,
+				7F240DA7E78FD36A576849DF /* Resources */,
+				7A712B97779EE7F0C8141060 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = app_iOS;
-			productName = app_iOS;
-			productReference = FBC720DFA1D01F55B0A32344 /* app_iOS.app */;
+			name = "chat-vrm_iOS";
+			productName = "chat-vrm_iOS";
+			productReference = 25D57090392E19C84EA169B6 /* chat-vrm_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A9B1B09F1872768368ACECE2 /* Project object */ = {
+		2CD07B02F6BEAC23071F0780 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					E86255CB8A1836C0BF0C0E14 = {
+					063F69791D04D657B1A5D389 = {
 						DevelopmentTeam = 3CK55QH5CB;
 					};
 				};
 			};
-			buildConfigurationList = B302E784349268C93E6F0A36 /* Build configuration list for PBXProject "app" */;
+			buildConfigurationList = 9DF3D24278A6D7F300813EF8 /* Build configuration list for PBXProject "chat-vrm" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -177,29 +177,29 @@
 				Base,
 				en,
 			);
-			mainGroup = 87648061424F20D5D4871E9E;
+			mainGroup = DE6D58AE13F8CBB3299A12CD;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E86255CB8A1836C0BF0C0E14 /* app_iOS */,
+				063F69791D04D657B1A5D389 /* chat-vrm_iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FBCB8C3ED193E9C4A9FDB59 /* Resources */ = {
+		7F240DA7E78FD36A576849DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BD59C055C986EA4A77FDA2 /* Assets.xcassets in Resources */,
-				5C516481BCA83A182C2BCC94 /* assets in Resources */,
+				91AC5ECF1DB3F3F9082279E3 /* Assets.xcassets in Resources */,
+				6FDEF1AADE45ABF8D883827F /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E028F843270D8815FCE2B491 /* Build Rust Code */ = {
+		811F10AD500FCDDC0947928D /* Build Rust Code */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -218,23 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Users/ddpn08/.cargo/bin/cargo-tauri tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+			shellScript = "node /Users/ddpn08/data/code/github/ddPn08/ChatVRM/./node_modules/.bin/../@tauri-apps/cli/tauri.js ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		81BE6BC5B603407AF570E994 /* Sources */ = {
+		E0007C9E364E22E8A77C7ADA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53CDD0ACFBE8BDF1550B2E53 /* main.mm in Sources */,
+				19D0758500C7E8A13F9F90EC /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1B9D5B8D34E6E0C88D0207F2 /* release */ = {
+		18915340F5213E316CF97ECD /* release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -250,7 +250,7 @@
 					"$(inherited)",
 					"\".\"",
 				);
-				INFOPLIST_FILE = app_iOS/Info.plist;
+				INFOPLIST_FILE = "chat-vrm_iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -258,15 +258,15 @@
 				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
-				PRODUCT_BUNDLE_IDENTIFIER = world.ddpn.app;
-				PRODUCT_NAME = app;
+				PRODUCT_BUNDLE_IDENTIFIER = "world.ddpn.chat-vrm";
+				PRODUCT_NAME = "chat-vrm";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64  arm64-sim";
 			};
 			name = release;
 		};
-		3C6497CF9EADFA373F12EF5C /* release */ = {
+		2DBCFD1DBA845F5DBD978E68 /* release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -322,7 +322,7 @@
 			};
 			name = release;
 		};
-		4AC19FD47C6011940ACEB467 /* debug */ = {
+		986E786761DDA694E9059783 /* debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -338,7 +338,7 @@
 					"$(inherited)",
 					"\".\"",
 				);
-				INFOPLIST_FILE = app_iOS/Info.plist;
+				INFOPLIST_FILE = "chat-vrm_iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,15 +346,15 @@
 				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
 				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
-				PRODUCT_BUNDLE_IDENTIFIER = world.ddpn.app;
-				PRODUCT_NAME = app;
+				PRODUCT_BUNDLE_IDENTIFIER = "world.ddpn.chat-vrm";
+				PRODUCT_NAME = "chat-vrm";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64  arm64-sim";
 			};
 			name = debug;
 		};
-		CAA806262C53A2E15E5DB0CA /* debug */ = {
+		D1CF26241141A287D2495F0F /* debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -420,25 +420,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B302E784349268C93E6F0A36 /* Build configuration list for PBXProject "app" */ = {
+		0C3FFACA68340778E2C909A8 /* Build configuration list for PBXNativeTarget "chat-vrm_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CAA806262C53A2E15E5DB0CA /* debug */,
-				3C6497CF9EADFA373F12EF5C /* release */,
+				986E786761DDA694E9059783 /* debug */,
+				18915340F5213E316CF97ECD /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = debug;
 		};
-		CDCB6DFA1AEBFEE3F608BA27 /* Build configuration list for PBXNativeTarget "app_iOS" */ = {
+		9DF3D24278A6D7F300813EF8 /* Build configuration list for PBXProject "chat-vrm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AC19FD47C6011940ACEB467 /* debug */,
-				1B9D5B8D34E6E0C88D0207F2 /* release */,
+				D1CF26241141A287D2495F0F /* debug */,
+				2DBCFD1DBA845F5DBD978E68 /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A9B1B09F1872768368ACECE2 /* Project object */;
+	rootObject = 2CD07B02F6BEAC23071F0780 /* Project object */;
 }

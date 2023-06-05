@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E86255CB8A1836C0BF0C0E14"
-               BuildableName = "app_iOS.app"
-               BlueprintName = "app_iOS"
-               ReferencedContainer = "container:app.xcodeproj">
+               BlueprintIdentifier = "063F69791D04D657B1A5D389"
+               BuildableName = "chat-vrm_iOS.app"
+               BlueprintName = "chat-vrm_iOS"
+               ReferencedContainer = "container:chat-vrm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E86255CB8A1836C0BF0C0E14"
-            BuildableName = "app_iOS.app"
-            BlueprintName = "app_iOS"
-            ReferencedContainer = "container:app.xcodeproj">
+            BlueprintIdentifier = "063F69791D04D657B1A5D389"
+            BuildableName = "chat-vrm_iOS.app"
+            BlueprintName = "chat-vrm_iOS"
+            ReferencedContainer = "container:chat-vrm.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -69,10 +69,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E86255CB8A1836C0BF0C0E14"
-            BuildableName = "app_iOS.app"
-            BlueprintName = "app_iOS"
-            ReferencedContainer = "container:app.xcodeproj">
+            BlueprintIdentifier = "063F69791D04D657B1A5D389"
+            BuildableName = "chat-vrm_iOS.app"
+            BlueprintName = "chat-vrm_iOS"
+            ReferencedContainer = "container:chat-vrm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -100,10 +100,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E86255CB8A1836C0BF0C0E14"
-            BuildableName = "app_iOS.app"
-            BlueprintName = "app_iOS"
-            ReferencedContainer = "container:app.xcodeproj">
+            BlueprintIdentifier = "063F69791D04D657B1A5D389"
+            BuildableName = "chat-vrm_iOS.app"
+            BlueprintName = "chat-vrm_iOS"
+            ReferencedContainer = "container:chat-vrm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>

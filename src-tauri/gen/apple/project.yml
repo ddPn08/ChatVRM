@@ -1,4 +1,4 @@
-name: app
+name: chat-vrm
 options:
   bundleIdPrefix: world.ddpn
   deploymentTarget:
@@ -10,8 +10,8 @@ configs:
 settingGroups:
   app:
     base:
-      PRODUCT_NAME: app
-      PRODUCT_BUNDLE_IDENTIFIER: world.ddpn.app
+      PRODUCT_NAME: chat-vrm
+      PRODUCT_BUNDLE_IDENTIFIER: world.ddpn.chat-vrm
       DEVELOPMENT_TEAM: 3CK55QH5CB
 targetTemplates:
   app:
@@ -25,7 +25,7 @@ targetTemplates:
     settings:
       groups: [app]
 targets:
-  app_iOS:
+  chat-vrm_iOS:
     type: application
     platform: iOS
     sources:
@@ -36,7 +36,7 @@ targets:
         buildPhase: resources
         type: folder
     info:
-      path: app_iOS/Info.plist
+      path: chat-vrm_iOS/Info.plist
       properties:
         LSRequiresIPhoneOS: true
         UILaunchStoryboardName: LaunchScreen
@@ -77,7 +77,7 @@ targets:
       - sdk: UIKit.framework
       - sdk: WebKit.framework
     preBuildScripts:
-      - script: /Users/ddpn08/.cargo/bin/cargo-tauri tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths "${FRAMEWORK_SEARCH_PATHS:?}" --header-search-paths "${HEADER_SEARCH_PATHS:?}" --gcc-preprocessor-definitions "${GCC_PREPROCESSOR_DEFINITIONS:-}" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}
+      - script: node /Users/ddpn08/data/code/github/ddPn08/ChatVRM/./node_modules/.bin/../@tauri-apps/cli/tauri.js ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths "${FRAMEWORK_SEARCH_PATHS:?}" --header-search-paths "${HEADER_SEARCH_PATHS:?}" --gcc-preprocessor-definitions "${GCC_PREPROCESSOR_DEFINITIONS:-}" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}
         name: Build Rust Code
         basedOnDependencyAnalysis: false
         outputFiles:
